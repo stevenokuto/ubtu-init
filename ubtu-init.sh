@@ -8,7 +8,7 @@ sudo sh get-docker.sh
 rm get-docker.sh
 
 # some tools
-sudo apt-get install htop tmux openssh-server smartmontools python3-pip unzip auditd gcp -y
+sudo apt-get install htop tmux openssh-server smartmontools python3-pip unzip auditd gcp ffmpeg -y
 
 # Rust language (this will block the script)
 # curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
