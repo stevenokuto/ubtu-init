@@ -1,6 +1,7 @@
 #!/bin/bash
 
 # Install docker
+sudo apt-get update -y
 sudo apt-get upgrade -y
 sudo apt-get install curl net-tools -y
 curl -fsSL https://get.docker.com -o get-docker.sh
