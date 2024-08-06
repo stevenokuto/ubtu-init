@@ -26,6 +26,7 @@ rm cuda-keyring_1.0-1_all.deb
 # sudo apt-cache search nvidia-driver-*
 
 # Install nvidia container toolkit
+# distribution="ubuntu22.04" for pop_os_22_04
 distribution=$(. /etc/os-release;echo $ID$VERSION_ID) \
       && curl -fsSL https://nvidia.github.io/libnvidia-container/gpgkey | sudo gpg --dearmor -o /usr/share/keyrings/nvidia-container-toolkit-keyring.gpg \
       && curl -s -L https://nvidia.github.io/libnvidia-container/$distribution/libnvidia-container.list | \
