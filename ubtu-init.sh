@@ -17,8 +17,8 @@ sudo apt-get install htop tmux openssh-server smartmontools python3-pip unzip au
 # Install nvidia driver
 sudo apt-get install linux-headers-$(uname -r)
 distribution=$(. /etc/os-release;echo $ID$VERSION_ID | sed -e 's/\.//g')
-wget https://developer.download.nvidia.com/compute/cuda/repos/$distribution/x86_64/cuda-keyring_1.0-1_all.deb
-sudo dpkg -i cuda-keyring_1.0-1_all.deb
+wget https://developer.download.nvidia.com/compute/cuda/repos/$distribution/x86_64/cuda-keyring_1.1-1_all.deb
+sudo dpkg -i cuda-keyring_1.1-1_all.deb
 sudo apt-get update -y && sudo apt-get -y install nvidia-driver-555 cuda
 rm cuda-keyring_1.0-1_all.deb
 
